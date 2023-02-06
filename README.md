@@ -1,7 +1,8 @@
 This is a terraform module to set up an amazon MSK / apache kafka cluster.
 
     module "amazon_msk_cluster" {
-      source                      = "./modules/queues/amazon_msk"
+      source                      = "leroykayanda/MSK/aws"
+      version                     = "1.0.1"
       microservice_name           = var.microservice_name
       env                         = var.env
       team                        = var.team
